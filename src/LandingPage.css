@@ -43,6 +43,7 @@ a:hover{
 .section h1{
     text-align: center;
     background-color: #333333;
+    padding-bottom: 0.5em;
 }
 
 .section img{
