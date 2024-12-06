@@ -2,11 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,11 +18,10 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  color: #FFFFFF;
+  background-image: url("https://www.freepik.com/free-vector/white-gray-abstract-gradient-background_390773960.htm#fromView=keyword&page=1&position=4&uuid=cd3191c6-4c90-4310-bdaf-159a77250bdd");
+  margin: 0%;
+
 }
 
 h1 {

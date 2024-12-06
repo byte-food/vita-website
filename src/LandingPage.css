@@ -1,0 +1,57 @@
+.nav{
+    background-color: #333333;
+    width: 100%;
+    min-height: fit-content;
+    padding-bottom: 1em;
+    margin-left: 0%;
+    margin-right: 0%;
+    justify-content: flex-end;
+}
+a{
+    color: #D32F2F;
+}
+a:hover{
+    color: #B0BEC5;
+}
+.nav a{
+    margin-right: 2em;
+    text-align: center;
+    border-style: solid;
+    border-left: 0em;
+    border-bottom: 0em;
+    border-top: 0em;
+    padding-right: 1em;
+    margin-top: 1em;
+    font-size: 1em;
+    justify-content: center;
+}
+
+.nav a img{
+    width: 1.5em;
+
+}
+
+.section{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #555555;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.section h1{
+    text-align: center;
+    background-color: #333333;
+}
+
+.section img{
+    max-width: 30%;
+}
+
+.section p{
+    font-size: 1.25em;
+    font-style: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+}
