@@ -1,15 +1,15 @@
 import { useState } from "react"
 import "./LandingPage.css"
-import vitaLogo from "./assets/temp_logo.png"
+
 
 function Contact(){
     return(
     <>
-    <div className="section">
-    <h1>Contact</h1>
-    <p>Whatsapp: <a href="tel:+971505756010">+971 50 575 6010</a></p>
-    <p>Email: <a href="mailto:tariq.alotaibi@live.com">tariq.alotaibi@live.com</a></p>
-    </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <p>Whatsapp: <a href="tel:+971505756010">+971 50 575 6010</a></p>
+            <p>Email: <a href="mailto:tariq.alotaibi@live.com">tariq.alotaibi@live.com</a></p>
+        </div>
     </>
     )
 }
@@ -17,27 +17,40 @@ function Contact(){
 function Dashboard(){
     return(
         <>
-        <div className="section">
-            <h1>Summary</h1>
-            <img src={vitaLogo}></img>
-            <h2>Problem</h2>
-            <p>
-                Startups and growing businesses often lack the technical expertise and resources needed to develop robust software solutions,
-                implement AI technologies, and manage scalable cloud infrastructures. 
-                This gap hinders their ability to innovate and compete effectively in today’s fast-paced digital landscape.
-            </p>
-            <h2>Solution</h2>
-            <p>
-                ViTa Solutions provides expert software development, AI-driven innovation,
-                and cloud solutions tailored to meet the unique needs of startups and businesses without in-house technical teams.
-                We deliver scalable, efficient, and cost-effective technology services to help organizations thrive in the digital age.
-            </p>
-            <h2>Mission</h2>
-            <p>
-            Our mission is to empower startups and businesses by bridging the technology gap,
-            enabling them to achieve their goals with cutting-edge solutions, 
-            innovation, and exceptional service.
-            </p>
+        <div id="dashboard">
+            <div id="summary">
+                <h1>Vita</h1>
+                <p> 
+                    we specialize in empowering businesses with cutting-edge software development, AI-driven solutions,
+                    and cloud technologies.
+                </p>
+            </div>
+            <div className="section-container">
+                <div className="section">
+                    <h1>Problem</h1>
+                    <p>
+                        Startups and growing businesses often lack the technical expertise and resources needed to develop robust software solutions,
+                        implement AI technologies, and manage scalable cloud infrastructures. 
+                        This gap hinders their ability to innovate and compete effectively in today’s fast-paced digital landscape.
+                    </p>
+                </div>
+                <div className="section">
+                    <h1>Solution</h1>
+                    <p>
+                        ViTa Solutions provides expert software development, AI-driven innovation,
+                        and cloud solutions tailored to meet the unique needs of startups and businesses without in-house technical teams.
+                        We deliver scalable, efficient, and cost-effective technology services to help organizations thrive in the digital age.
+                    </p>
+                </div>
+                <div className="section">
+                    <h1>Mission</h1>
+                    <p>
+                    Our mission is to empower startups and businesses by bridging the technology gap,
+                    enabling them to achieve their goals with cutting-edge solutions, 
+                    innovation, and exceptional service.
+                    </p>
+                </div>
+            </div>
         </div>
         </>
     )
@@ -63,7 +76,8 @@ function LandingPage(){
         <Contact></Contact>
         }
 
-
+        <footer>
+        </footer>
         </>
     )
 }
