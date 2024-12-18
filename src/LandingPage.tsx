@@ -29,7 +29,7 @@ function Contact(){
                 <br></br>
                 <textarea name="Text1" cols= {50} rows={10} value={inquiry} onChange ={(e)=>{setInquiry(e.target.value)}}></textarea>
                 <br></br>
-                <input type="submit" value="submit"></input>
+                <input type="submit" value="submit" onClick={()=>{}}></input>
             </form>
         </div>
     </>
