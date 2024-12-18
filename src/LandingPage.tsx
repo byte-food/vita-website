@@ -29,7 +29,7 @@ function Contact(){
                 <br></br>
                 <textarea name="Text1" cols= {50} rows={10} value={inquiry} onChange ={(e)=>{setInquiry(e.target.value)}}></textarea>
                 <br></br>
-                <input type="submit" value="submit" onClick={()=>{}}></input>
+                <input id="submit" type="submit" value="submit" onClick={()=>{}}></input>
             </form>
         </div>
     </>
@@ -81,7 +81,7 @@ function Dashboard(){
             <div className="black-block">
                 <CardSection header="Our services" cards={services}></CardSection>
             </div>
-            <div className="wite-block">
+            <div className="white-block">
                 <Contact></Contact>
             </div>
         </div>
@@ -93,11 +93,8 @@ function LandingPage(){
     return(
         <>
         <div className="nav">
-            <a>
-                <span>Summary</span>
-            </a>
-            <a>
-            <span>Contact</span>
+            <a href="#contact">
+                <span>Contact</span>
             </a>
         </div>
         <Dashboard></Dashboard>

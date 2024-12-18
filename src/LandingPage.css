@@ -33,6 +33,7 @@ a:hover{
     margin-top: 3em;
     background-color: #FFFFFF;
     margin-bottom: 0em;
+    justify-content: center;
 }
 .white-block p{
     text-align: center;
@@ -69,7 +70,6 @@ a:hover{
     color: white;
     
 }
-
 .section p{
     padding: .5em;
     background-color: #FFFFFF;
@@ -84,12 +84,25 @@ a:hover{
 .black-block .section{
     color: white;
 }
-
-
-
 footer{
     padding: 1em;
 
 }
-#contact{
+#contact {
+    margin: 1em;
+}
+#contact label{
+    font-size: 1.25em;
+}
+#contact br{
+    font-size: 5em;
+}
+#contact form input{
+    margin-right: 3em;
+}
+#submit{
+    border-radius: 10%;
+    padding: 1.25em;
+    background-color: black;
+    color: white;
 }
