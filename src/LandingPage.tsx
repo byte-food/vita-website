@@ -8,31 +8,31 @@ const whyUs = [
     {"title": "Cost-Efficient Pricing", "description": "Affordable, transparent, and predictable."},
     {"title": "Custom Solutions", "description": "Tailored services for startups."}
 ]
+const services = [
+    {"title": "Custom Software Development", "description": "From conecpt to launch, we craft your custom web and mobile apps."},
+    {"title": "AI & Machine Learning", "description": "Save time with smart, AI-driven automations and customer service."},
+    {"title": "Cloud Infrastructure", "description": "Seamless, secure migrations to cost-effective cloud platforms."},
+    {"title": "Predictive Analytics", "description": "Get ahead of the curve with predictive models and visual insights."}
+]
+
 function Contact(){
+    const [fullname, setFullname] = useState("")
+    const [email, setEmail] = useState("")
+    const [inquiry, setInquiry] = useState("")
     return(
     <>
         <div id="contact">
-            <h1>Contact</h1>
-            <p>Whatsapp: <a href="tel:+971505756010">+971 50 575 6010</a></p>
-            <p>Email: <a href="mailto:tariq.alotaibi@live.com">tariq.alotaibi@live.com</a></p>
+            <h1>Send an inquiry and get a reply within a day!</h1>
+            <form>
+                <label>Full Name: </label><input id="fullname" name="fullname" onChange ={(e)=>{setFullname(e.target.value)}} value={fullname} type="text"></input>
+                <label>email: </label><input id="email" name="email" type="text" onChange ={(e)=>{setEmail(e.target.value)}} value={email}></input>
+                <br></br>
+                <textarea name="Text1" cols= {50} rows={10} value={inquiry} onChange ={(e)=>{setInquiry(e.target.value)}}></textarea>
+                <br></br>
+                <input type="submit" value="submit"></input>
+            </form>
         </div>
     </>
-    )
-}
-function Services(){
-    return(
-        <>
-
-            <div className="services">
-                <h1>Our services</h1>
-                <div className="service">
-                    <h2>
-
-                    </h2>
-                </div>
-            </div>
-
-        </>
     )
 }
 
@@ -79,7 +79,10 @@ function Dashboard(){
                 <CardSection header="Why Choose Vita?" cards={whyUs}></CardSection>
             </div>
             <div className="black-block">
-                <Services></Services>
+                <CardSection header="Our services" cards={services}></CardSection>
+            </div>
+            <div className="wite-block">
+                <Contact></Contact>
             </div>
         </div>
         </>
@@ -87,25 +90,17 @@ function Dashboard(){
 }
 
 function LandingPage(){
-    const [page, setPage] = useState(0)
     return(
         <>
         <div className="nav">
-            <a onClick={()=>{setPage(0)}}>
+            <a>
                 <span>Summary</span>
             </a>
-            <a onClick={()=>{setPage(1)}}>
+            <a>
             <span>Contact</span>
             </a>
         </div>
-
-        { page==0 &&
         <Dashboard></Dashboard>
-        }
-        { page==1 &&
-        <Contact></Contact>
-        }
-
         <footer>
         </footer>
         </>
