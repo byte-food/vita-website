@@ -1,5 +1,6 @@
+/*Navigation bar*/
 .nav{
-    background-color: #333333;
+    background-color: black;
     width: 100%;
     min-height: fit-content;
     padding-bottom: 1em;
@@ -8,7 +9,7 @@
     text-align: left;
 }
 a{
-    color: #D32F2F;
+    color: #FFFFFF;
     padding: 1em;
 }
 a:hover{
@@ -26,24 +27,75 @@ a:hover{
     font-size: 1em;
     justify-content: center;
 }
-#starter-section{
-    display: flex;
-    flex-wrap: wrap;
+/*black and white sections of the website*/
+.white-block{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 3em;
+    background-color: #FFFFFF;
 }
-#starter-section img{
-    width:20%;
-    margin: 1em;
+.white-block p{
+    text-align: center;
+    font-size: 2em;
+}
+.black-block{
+    background-color: black;
+    width: 100%;
+    color:#FFFFFF;
+}
+#introductory-text{
+    margin-bottom: 10%;
 }
 
-.explanatory-text{
+/*card sections*/
+.sections-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+.sections-container p{
+    font-size: 1em;
+}
+.section {
+    margin: 2em;
+    border-style: solid;
+
+}
+.section h3{
+    margin-top: 0%;
+    padding: 0.5em;
+    
+}
+
+.section p{
+    padding: .5em;
+}
+/*color scheme for white and black blocks of the sections*/
+.white-block .section{
+    color: black;
+}
+.white-block .section h3{
+    background-color: black;
+    color: white;
+}
+.white-block .section p{
+    color: black;
+}
+.black-block .section{
+    color: white;
+}
+.black-block .section h3{
+    background-color: white;
+    color: black;
+}
+.black-block .section p{
+    color: white;
+}
+
 
 footer{
     padding: 1em;
-    background-color: #FFFFFF;
+
 }
 #contact{
     text-align: center;
